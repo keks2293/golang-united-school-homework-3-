@@ -3,14 +3,11 @@ package homework
 import "sort"
 
 func sortMapValues(input map[int]string) (result []string) {
-	keys := make([]string, 0, len(input))
-	for k := range input {
-		keys = append(keys, k)
-	}
-	sort.Strings(keys)
+	ids := make([]int, 0, len(input))
 
-	for _, k := range keys {
-		result = append(result, keys[i])
+	for id := range input {
+		ids = append(ids, id)
 	}
+	sort.Ints(ids)
 	return
 }

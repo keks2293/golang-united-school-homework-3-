@@ -9,7 +9,6 @@ func sortMapValues(input map[int]string) (result []string) {
 		ids = append(ids, id)
 	}
 	sort.Ints(ids)
-	result := make([]string, len(ids)-1)
 	for _, value := range ids {
 		result = append(result, value)
 	}
